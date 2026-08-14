@@ -4,6 +4,7 @@ import numpy as np
 from typing import Optional
 from src.configuration.mongo_db_connection import MongoDBClient
 from src.constants import DATABASE_NAME
+
 from src.exception import MyException
 class Proj1Data:
     def __init__(self):

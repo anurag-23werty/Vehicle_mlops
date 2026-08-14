@@ -22,5 +22,5 @@ class MongoDBClient:
                 logging.info("MongoDB connection successful")
         except Exception as e:
             raise MyException(e,sys)
-print(MONGODB_URL_KEY)
+
          
