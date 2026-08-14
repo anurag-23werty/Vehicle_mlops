@@ -6,8 +6,8 @@ class S3Client:
     s3_resource =None
     def __init__(self,region_name = REGION_NAME):
         if S3Client.s3_resource==None or S3Client.s3_client==None:
-            __access_key_id = AWS_SECRET_ACCESS_KEY_ENV_KEY,    
-            __secret_access_key_id = AWS_ACCESS_KEY_ID_ENV_KEY
+            __access_key_id = AWS_ACCESS_KEY_ID_ENV_KEY 
+            __secret_access_key_id = AWS_SECRET_ACCESS_KEY_ENV_KEY
             if __access_key_id is None:
                 raise Exception("Enviroment Variable is not set")
             if __secret_access_key_id is None:

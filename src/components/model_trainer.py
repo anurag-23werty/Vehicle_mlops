@@ -34,10 +34,7 @@ class ModelTrainer:
                 y_pred = model.predict(x_test)
                 
                 y_pred = np.asarray(y_pred).astype(int)
-                print("y_test dtype:", y_test.dtype)
-                print("y_pred dtype:", y_pred.dtype)
-                print("y_test unique:", np.unique(y_test))
-                print("y_pred unique:", np.unique(y_pred))
+               
                 accuracy = accuracy_score(y_test, y_pred)
                 f1 = f1_score(y_test, y_pred)
                 precision = precision_score(y_test, y_pred)
