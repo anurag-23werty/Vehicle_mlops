@@ -61,6 +61,7 @@ class DataTransformation:
             df= pd.get_dummies(df,drop_first=True)
             return df
     def _rename_columns(self,df):
+            print(df.columns)
             logging.info("Renaming specific columns and casting to int")
             df =df.rename(columns={
                 "Vehicle_Age_< 1 Year":"Vehicle_Age_lt_1_Year",
